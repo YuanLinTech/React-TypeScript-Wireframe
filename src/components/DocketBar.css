@@ -1,0 +1,32 @@
+div.dockets{
+    width: 1142px;
+    margin: 6px;
+    height: 52px;
+    background-color: #B4B4FF;
+    border-radius: 12px;
+}
+
+label{
+    height: 40px;
+    margin: 6px 0px;
+    padding: 6px;
+    box-sizing: border-box;
+    float: left;
+}
+
+input{
+    margin: 18px 6px;
+    width: 14px;
+    height: 14px;
+    border-style: medium solid black;
+    background-color: #f5f6f7;
+    float: left;
+}
+
+span.address{
+    border-radius: 11px;
+    height: 22px;
+    margin: 13px 24px 9px 0px;
+    font-size: 12px;
+    float: right;
+}

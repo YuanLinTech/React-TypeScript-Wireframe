@@ -1,0 +1,31 @@
+div{
+    width: 1488px;
+    height: 41px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+li {
+    float: left;
+}
+
+/* Style each link and button in the navigation bar */
+li > a{
+    display: inline-block;
+    position: relative;
+    color: black;
+    text-align: center;
+    padding: 13px 7px;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+a#inbox{
+    font-weight: bold;
+}

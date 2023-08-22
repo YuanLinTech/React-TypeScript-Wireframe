@@ -1,0 +1,58 @@
+div.menu{
+    display: block;
+    width: 233px;
+    height: 291px;
+    border: thin solid black;
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+}
+
+div.title{
+    width: 100%;
+    height: 36px;
+    margin: 0px;
+    border-bottom: thin solid black;
+}
+
+span.title{
+    float: left;
+    font-size: 25px;
+    padding: 1px 0px;
+    margin: 3px 12px;
+}
+
+img.FilterDocket{
+    float: right;
+    margin: 4.6px 3px 3.6px 3px;
+}
+
+div.buttons{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div.filterOptions{
+    color: white;
+    font-size: 18px;
+    width: 214px;
+    height: 35px;
+    margin: 10px;
+    border-radius: 14px;
+    cursor: default;
+    background-color: #B4B4FF;
+    padding: 4px 14px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+div.filterOptions:hover{
+    background-color: #4646FF;
+}
+
+.active:after{
+    content: "\2713"; /* Unicode UTF-16 (hex) code for the check mark (✓) sign */
+}

@@ -1,0 +1,54 @@
+div.header{
+    width: 1142px;
+    height: 44px;
+    margin: 100px 178px 44px 168px;
+    padding: 1px 0px;
+    border-bottom: medium solid grey;
+}
+
+span.header{
+    font-size: 30px;
+    float: left;
+    font-weight: 600;
+    height: 42px;
+    padding: 1px 5px;
+    margin: 5px 13px 5px 0px;
+}
+
+span.filterTag{
+    height: 15px;
+    border-radius: 6px;
+    background: #EFF0F4;
+    font-size: 12px;
+    font-weight: 500;
+    float: left;
+    padding: 2px 11px;
+    margin: 17px 7px 9px 7px;
+}
+
+span.filter{
+    float: right;
+    width: 80px;
+    height: 42px;
+    margin: 6px 9px;
+}
+
+img.HeaderBar{
+    float: left;
+    margin: 10px 3px 11px 3px;
+}
+
+span.filterButton{
+    font-size: 20px;
+    text-align: center;
+    padding: 14px 3px 4px 3px;
+    border-width: 0px;
+    width: 44px;
+    height: 42px;
+    margin: 3px 3px;
+    background-color: white;
+}
+
+span.filterOptions{
+    display: block;
+}
