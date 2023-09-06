@@ -60,7 +60,7 @@ export default function App() {
       groupedDockets.push(
         <li key={key}>
             <div className="docketGroup">
-                <div className="groupHeader">{key}</div>
+                <span className="groupHeader">{key}</span>
                 {docketGroup}
             </div>
         </li>

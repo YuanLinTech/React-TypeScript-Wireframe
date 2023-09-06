@@ -10,16 +10,17 @@ div{
 }*/
 
 div.DocketBar{
-  margin: 44px 435px 440px 168px;
+  margin: 20px 435px 440px 50px;
   background-color: #F5F6F7;
 }
 
-/*
-div.docketGroup{
-
+span.groupHeader{
+  display: block;
+  width: 300px;
+  height: 26px;
+  border: thin solid pink;
+  border-radius: 13px;
+  padding: 2px;
+  margin: 10px;
+  background-color: pink;
 }
-
-div.groupHeader{
-
-}
-*/
