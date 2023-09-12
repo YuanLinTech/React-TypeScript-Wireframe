@@ -2551,7 +2551,7 @@ const dummy_project: Project[] = [
   },
   {
     projectId: "d67c9a13-0299-4cfe-b7f9-efd7f790a36a",
-    siteAddress: "178 Ludstone Street Hampton",
+    siteAddress: "178 Ludstone Street, Hampton",
   },
   {
     projectId: "88141274-d3ca-4208-bb4a-c80dcc85341a",
@@ -2559,7 +2559,7 @@ const dummy_project: Project[] = [
   },
   {
     projectId: "fef31f2a-746c-4bc7-8c90-86ec885c30cb",
-    siteAddress: "47 Tennyson Ave Clayton South",
+    siteAddress: "47 Tennyson Ave, Clayton South",
   },
 ];
 
