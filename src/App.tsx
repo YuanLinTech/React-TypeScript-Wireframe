@@ -22,11 +22,11 @@ export default function App() {
     return false;
   }
 
-  const filterByProjects = docketList.reduce((group: { [key: string]: Array<Docket> }, docket: Docket) => {
-    const {project} = docket;
-    if (project !== null){
-      group[project] = group[project] ?? [];
-      group[project].push(docket);
+  const filterBySiteAddress = docketList.reduce((group: { [key: string]: Array<Docket> }, docket: Docket) => {
+    const {projectSiteAddress} = docket;
+    if (projectSiteAddress !== null){
+      group[projectSiteAddress] = group[projectSiteAddress] ?? [];
+      group[projectSiteAddress].push(docket);
     }
     return group;
   }, {});
@@ -49,8 +49,8 @@ export default function App() {
     );
   }
   else{
-    for (const key of Object.keys(filterByProjects)){
-      docketGroup = filterByProjects[key].map(docket=>
+    for (const key of Object.keys(filterBySiteAddress)){
+      docketGroup = filterBySiteAddress[key].map(docket=>
         <li key = {docket.docketId}>
           <DocketBar docketName = {docket.docketName} docketId = {docket.docketId} 
           statusColor = {docket.statusColor} projectSiteAddress= {docket.projectSiteAddress}/>
@@ -73,7 +73,7 @@ export default function App() {
       <NavBar/>
       <HeaderBar filterState={filterState} setFilterState={setFilterState}/>
       <div className="DocketBar">
-        <ul>{filterState === "Filter by projects"? groupedDockets: docketBarList}</ul>
+        <ul>{filterState === "Filter by site address"? groupedDockets: docketBarList}</ul>
       </div>
     </>
   );

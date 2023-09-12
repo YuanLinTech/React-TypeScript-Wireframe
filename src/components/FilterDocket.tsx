@@ -1,6 +1,6 @@
 import './FilterDocket.css';
 
-export type filterType = "Filter by projects" | "Due today" | "All dockets";
+export type filterType = "Filter by site address" | "Due today" | "All dockets";
 
 export default function FilterDocket(filter: {setFilterState: React.Dispatch<React.SetStateAction<filterType>>}){
     /* Converts filterBars to an array of type HTMLElement[] so that it has the "forEach" property,
@@ -12,7 +12,7 @@ export default function FilterDocket(filter: {setFilterState: React.Dispatch<Rea
         const filterCriterion:HTMLElement|null = document.querySelector("div.buttons>div:nth-child(1 of .filterOptions)");
         if (filterCriterion !== null){
             filterCriterion.style.backgroundColor = "#4646FF";
-            filter.setFilterState("Filter by projects");
+            filter.setFilterState("Filter by site address");
         }
         // Reset the background color of other filter options to ensure that only one filter criteria can be selected at one time
         filterBars.forEach((item) => {
@@ -69,7 +69,7 @@ export default function FilterDocket(filter: {setFilterState: React.Dispatch<Rea
                 <img src={require('../images/close_button.png')} alt="Close filter menu" onClick={closeFilterMenu} className="FilterDocket"/>
             </div>
             <div className="buttons">
-                <div className="filterOptions" onClick={handleClick1}>Filter by projects</div>
+                <div className="filterOptions" onClick={handleClick1}>Filter by site address</div>
                 <div className="filterOptions" onClick={handleClick2}>Due today</div>
                 <div className="filterOptions" onClick={handleClick3}>All dockets</div>
             </div>
